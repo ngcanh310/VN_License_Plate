@@ -28,7 +28,7 @@ RESIZED_IMAGE_HEIGHT = 30
 
 ###################################################################################################
 def main():
-    imgTrainingNumbers = cv2.imread("training.png")            # read in training numbers image
+    imgTrainingNumbers = cv2.imread("../dataset/images/training.png")            # read in training numbers image
     #imgTrainingNumbers = cv2.resize(imgTrainingNumbers, dsize = None, fx = 0.5, fy = 0.5)
     
     imgGray = cv2.cvtColor(imgTrainingNumbers, cv2.COLOR_BGR2GRAY)          # get grayscale image
@@ -104,8 +104,8 @@ def main():
 
     print ("\n\ntraining complete !!\n")
 
-    np.savetxt("classifications.txt", npaClassifications)           # write flattened images to file
-    np.savetxt("flattened_images.txt", npaFlattenedImages)          #
+    np.savetxt("../dataset/classifications.txt", npaClassifications)           # write flattened images to file
+    np.savetxt("../dataset/flattened_images.txt", npaFlattenedImages)          #
 
     cv2.destroyAllWindows()             # remove windows from memory
 

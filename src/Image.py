@@ -13,11 +13,12 @@ n = 1
 Min_char = 0.01
 Max_char = 0.09
 
-RESIZED_IMAGE_WIDTH = 20
+RESIZED_IMAGE_WIDTH = 20    
 RESIZED_IMAGE_HEIGHT = 30
 
-img = cv2.imread("data/img/1.jpg")
+img = cv2.imread('../data/img/1.jpg')
 img = cv2.resize(img, dsize=(1920, 1080))
+
 
 ###################### If you want to try increasing the contrast #############
 # img2 = cv2.imread("1.jpg")
@@ -27,8 +28,8 @@ img = cv2.resize(img, dsize=(1920, 1080))
 ###############################################################
 
 ######## Upload KNN model ######################
-npaClassifications = np.loadtxt("classifications.txt", np.float32)
-npaFlattenedImages = np.loadtxt("flattened_images.txt", np.float32)
+npaClassifications = np.loadtxt("../dataset/classifications.txt", np.float32)
+npaFlattenedImages = np.loadtxt("../dataset/flattened_images.txt", np.float32)
 npaClassifications = npaClassifications.reshape(
     (npaClassifications.size, 1))  # reshape numpy array to 1d, necessary to pass to call to train
 kNearest = cv2.ml.KNearest_create()  # instantiate KNN object
