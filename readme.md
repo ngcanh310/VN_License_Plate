@@ -16,6 +16,6 @@
 
 # src
 
-## Gendata.py: Đọc và xử lý ảnh đầu vào
+## Gendata.py: Đọc và xử lý ảnh đầu vào. Tạo các điểm dữ liệu KNN, bao gồm classifications.txt và flattened_images.txt.
 
-## Preprocess.py: tạo ra ảnh xám và ảnh nhị phân từ ảnh gốc, nhằm làm nổi bật chi tiết của biển số xe, giúp nhận diện hoặc xử lý dễ dàng hơn
+## Preprocess.py: chứa các hàm sử lý hình ảnh, tạo ra ảnh xám và ảnh nhị phân từ ảnh gốc, nhằm làm nổi bật chi tiết của biển số xe, giúp nhận diện hoặc xử lý dễ dàng hơn
