@@ -1,4 +1,8 @@
-# How to run: cd src -> python image.py
+# How to run:
+
+## image.py: cd src -> python image.py. Nhận diện tốt, độ chính xác cao nhưng không có giao diện, thay đổi ảnh thủ công
+
+## images.py: cd src -> python images.py. Giao diện dễ dùng, thân thiện nhưng nhận diện kém, cần cải thiện thuật toán
 
 # Data
 
