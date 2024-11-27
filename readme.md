@@ -2,7 +2,7 @@
 
 ## image.py: cd src -> python image.py. Nhận diện tốt, độ chính xác cao nhưng không có giao diện, thay đổi ảnh thủ công
 
-## images.py: cd src -> python images.py. Giao diện dễ dùng, thân thiện nhưng nhận diện kém, cần cải thiện thuật toán
+## images.py: cd src -> python images.py. Giao diện dễ dùng, thân thiện nhưng nhận diện kém, cần cải thiện thuật toán. Sau khi chọn nhận dạng ảnh, hình ảnh sẽ được vẽ contour và in ra biển số xe
 
 # Data
 
